@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Printer Alerts
+Comment=Tells when a printer runs out of paper, jams or runs low on ink
+Exec=@bindir@/singularity-printers --background
+Icon=dev.sinty.Printers
+NoDisplay=true
+OnlyShowIn=Singularity;
+X-GNOME-Autostart-enabled=true

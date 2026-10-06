@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Printers
+Comment=Follow print jobs and printer alerts
+Exec=singularity-printers
+Icon=dev.sinty.Printers
+Terminal=false
+Type=Application
+Categories=Settings;HardwareSettings;Printing;
+Keywords=printer;print;queue;ink;toner;job;
+StartupWMClass=dev.sinty.Printers
+DBusActivatable=true
+NoDisplay=true
