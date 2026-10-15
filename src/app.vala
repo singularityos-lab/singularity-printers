@@ -61,7 +61,7 @@ namespace Singularity.Apps.Printers {
             add_action (open);
             var quit = new SimpleAction ("quit", null);
             quit.activate.connect (() => {
-                foreach (var w in get_windows ()) w.close ();
+                foreach (var w in get_windows ().copy ()) w.close ();
             });
             add_action (quit);
             set_accels_for_action ("app.quit", { "<Control>q" });
