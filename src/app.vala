@@ -66,6 +66,7 @@ namespace Singularity.Apps.Printers {
             add_action (quit);
             set_accels_for_action ("app.quit", { "<Control>q" });
 
+            PrintersIntents.install (this);
             monitor = new Print.PrintMonitor ();
             monitor.job_finished.connect (on_job_finished);
             monitor.printer_attention.connect (on_attention);

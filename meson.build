@@ -21,7 +21,7 @@ if not meson.is_subproject() and libsingularity_dep.type_name() == 'internal'
 endif
 
 executable('singularity-printers',
-  files('src/app.vala', 'src/queue_window.vala'),
+  files('src/agent_intents.vala', 'src/app.vala', 'src/queue_window.vala'),
   dependencies: [gtk_dep, gee_dep, gio_dep, libsingularity_dep],
   install: true
 )
